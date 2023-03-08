@@ -7,10 +7,13 @@ public class Main {
         System.out.println("Input string:");
         String input = scanner.nextLine();
         char[] letters = new char[input.length()];
+        System.out.println("The result:");
         for (int i = 0; i < input.length(); i++) {
             letters[i] = input.charAt(i);
-            System.out.print(letters[i] + " ");
-            //test commit
+            String lettersInBinary = Integer.toBinaryString(letters[i]);
+            int num = Integer.parseInt(lettersInBinary);
+            String binary = String.format("%07d", num);
+            System.out.println(letters[i] + " = " + binary);
         }
 
     }
