@@ -12,8 +12,7 @@ public class Main {
             letters[i] = input.charAt(i);
             String lettersInBinary = Integer.toBinaryString(letters[i]);
             int num = Integer.parseInt(lettersInBinary);
-            String binary = String.format("%07d", num);
-            System.out.println(letters[i] + " = " + binary);
+            System.out.println(letters[i] + " = " + String.format("%07d", num));
         }
 
     }
