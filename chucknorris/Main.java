@@ -22,14 +22,10 @@ public class Main {
                 count++;
             }
             if (lettersInBinary.charAt(j) == '1') {
-                System.out.print("0 ");
-                System.out.print("0".repeat(count));
-                System.out.print(" ");
+                System.out.print("0 " + "0".repeat(count) + " ");
             }
             if (lettersInBinary.charAt(j) == '0') {
-                System.out.print("00 ");
-                System.out.print("0".repeat(count));
-                System.out.print(" ");
+                System.out.print("00 " + "0".repeat(count) + " ");
             }
         }
     }
